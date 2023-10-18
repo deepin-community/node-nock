@@ -1,0 +1,8 @@
+LIST="tests/test_allow_unmocked_https.js tests/test_nock_off.js tests/test_recorder.js tests/test_destroy.js"
+for i in $LIST; do
+	mv $i ${i}_disabled
+done
+mocha tests
+for i in $LIST; do
+	mv ${i}_disabled $i
+done
