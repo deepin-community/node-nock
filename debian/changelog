@@ -1,5 +1,88 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-nock (13.3.3-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * New upstream version 13.3.3
+  * Bump Standards-Version to 4.6.2 (no changes needed)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Ananthu C V <weepingclown@disroot.org>  Wed, 11 Oct 2023 00:19:23 +0530
+
+node-nock (13.2.9-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-nock: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 27 Nov 2022 14:20:54 +0000
+
+node-nock (13.2.9-2) unstable; urgency=medium
+
+  * Team upload
+  * Disable test during build and require Internet during autopkgtest
+    (Closes: #1019572)
+
+ -- Yadd <yadd@debian.org>  Mon, 12 Sep 2022 12:23:15 +0200
+
+node-nock (13.2.9-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 13.2.9
+  * Install docs
+
+ -- Yadd <yadd@debian.org>  Mon, 29 Aug 2022 15:58:01 +0200
+
+node-nock (13.2.7-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 13.2.7
+  * Fix test for Node.js >= 18 (Closes: #1013991)
+
+ -- Yadd <yadd@debian.org>  Sat, 02 Jul 2022 19:44:16 +0200
+
+node-nock (13.2.6-1) unstable; urgency=medium
+
+  * New upstream version 13.2.6
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 14 Jun 2022 02:14:39 -0400
+
+node-nock (13.2.4-1) unstable; urgency=medium
+
+  * New upstream version 13.2.4
+  * Bumping copyright years.
+
+ -- Andrius Merkys <merkys@debian.org>  Sun, 06 Feb 2022 03:20:46 -0500
+
+node-nock (13.2.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 13.2.2
+
+ -- Yadd <yadd@debian.org>  Wed, 12 Jan 2022 11:05:59 +0100
+
+node-nock (13.2.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Andrius Merkys ]
+  * Binary package depends on node-lodash-packages.
+
+  [ Yadd ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Drop dependency to nodejs
+  * Drop unneeded dependency versioned constraints
+  * New upstream version 13.2.1
+  * Embed assert-rejects, dirty-chai and is-regexp for test only
+  * Enable upstream test (mocha)
+
+ -- Yadd <yadd@debian.org>  Sat, 20 Nov 2021 22:42:29 +0100
+
+node-nock (13.1.4-1) unstable; urgency=medium
+
+  * Initial release (Closes: #887142)
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 04 Nov 2021 11:18:45 -0400

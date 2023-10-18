@@ -1,0 +1,21 @@
+Description: fix test for Node.js >= 18
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1013991
+Forwarded: no
+Last-Update: 2022-07-02
+
+--- a/tests/test_socket.js
++++ b/tests/test_socket.js
+@@ -66,7 +66,11 @@
+     const stream = await new Promise(resolve => req.on('response', resolve))
+ 
+     // close after first chunk of data
+-    stream.on('data', () => stream.destroy())
++    if(stream.client) {
++      stream.on('data', () => stream.client.destroy())
++    } else {
++      stream.on('data', () => stream.destroy())
++    }
+ 
+     await new Promise((resolve, reject) => {
+       stream.on('error', reject)
